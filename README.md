@@ -31,4 +31,20 @@ $ vagrant ssh
 $ vagrant share --http 4444 # note the hostname
 ```
 
+### to take screenshot..
+
+Need to install IPA font in linux.
+
+- ref: http://aqafiam.github.io/blog/how-to-install-phantomjs-casperjs/
+
+```
+sudo yum -y install mkfontdir mkfontscale
+wget "http://sourceforge.jp/frs/redir.php?m=osdn&f=%2Fmix-mplus-ipa%2F59021%2Fmigmix-medium-20130702.tar.xz" -O migmix.tar.xz
+tar Jxf migmix.tar.xz
+mkdir -p /usr/share/fonts/ipa/TrueType
+cd migmix-medium-20130702/
+cp migmix-* /usr/share/fonts/ipa/TrueType/
+mkfontdir
+mkfontscale
+```
 
